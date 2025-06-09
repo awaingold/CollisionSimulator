@@ -26,6 +26,15 @@ class Main extends JFrame {
 
 class CollisionSimulationPanel extends JPanel implements ActionListener {
 
+  // UI Components
+  private JPanel infoPanel = new JPanel();
+  private JLabel obj1VelXLabel;
+  private JLabel obj1VelYLabel;
+  private JLabel obj1VelMagLabel;
+  private JLabel obj2VelXLabel;
+  private JLabel obj2VelYLabel;
+  private JLabel obj2VelMagLabel;
+
   double ObjectOneX = 100;
   double ObjectOneY = 150;
   double ObjectTwoX = 500;
