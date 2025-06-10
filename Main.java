@@ -74,8 +74,12 @@ class Main extends JFrame {
     JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
     buttonPanel.add(startResetButton);
     buttonPanel.add(pauseButton);
-    inputPanel.add(buttonPanel); 
-    add(inputPanel, BorderLayout.NORTH);
+    
+    JPanel topPanel = new JPanel(new BorderLayout());
+    topPanel.add(inputPanel, BorderLayout.CENTER);
+    topPanel.add(buttonPanel, BorderLayout.SOUTH);
+    
+    add(topPanel, BorderLayout.NORTH);
 
     simulationPanel = new CollisionSimulationPanel();
     add(simulationPanel, BorderLayout.CENTER); 
