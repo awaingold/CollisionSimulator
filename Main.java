@@ -336,6 +336,7 @@ class CollisionSimulationPanel extends JPanel implements ActionListener {
 
       ObjectOneVel = Math.hypot(ObjectOneVelX, ObjectOneVelY);
       ObjectTwoVel = Math.hypot(ObjectTwoVelX, ObjectTwoVelY);
+      
   }
 
   private void updateVelocityLabels() {
