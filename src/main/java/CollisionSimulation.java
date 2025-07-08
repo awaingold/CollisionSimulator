@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Main extends JFrame {
+class CollisionSimulation extends JFrame {
 
   private CollisionSimulationPanel simulationPanel;
 
@@ -18,9 +18,10 @@ class Main extends JFrame {
   private JButton startResetButton;
   private JButton pauseButton;
   
-  public Main() {
+  public CollisionSimulation() {
 
-    super("Collision \"Simulation\"");
+    super("CollisionSimulation");
+
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     JPanel inputPanel = new JPanel();
@@ -128,7 +129,7 @@ class Main extends JFrame {
   }
 
   public static void main(String[] args) {
-    SwingUtilities.invokeLater(() -> new Main());
+    SwingUtilities.invokeLater(() -> new CollisionSimulation());
   }
 
 }
