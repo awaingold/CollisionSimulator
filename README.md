@@ -1,0 +1,1 @@
+Elastic particle collision simulator with some simplifying assumptions. Line of impacted is assumed to go directly through centers of masses of both objects (to simplfy calculations). Collisions are assumed to be fully elastic.
